@@ -21,7 +21,7 @@ npm install stflipcard --save
 </st-flipcard>
 ```
 
-### Example
+### Detailed Example
 ```
 ...
 <st-flipcard *ngFor="let tile of tiles" [height]="tile.height" [width]="tile.width">
@@ -49,6 +49,13 @@ public tiles: Array<CodeTile> = [
   ];
 ...
 ```
+
+## Attributes
+
+Attribute | Input
+------------ | -------------
+[height]| height for the card in px.
+[width] | width for the card in px.
 
 ## License
 
