@@ -1,0 +1,29 @@
+$sstumm-colors: (
+  'primary': #ffd000, 
+  'accent': #ffa600,
+  'secondary': #303030,
+  'foreground': #191919,
+  'background': #e9e9e9
+);
+
+@function sstumm-color($key: 'primary') {
+    @return map-get($scotch-colors, $key);
+  }
+
+  @function sstumm-color($key: 'accent') {
+    @return map-get($scotch-colors, $key);
+  }
+
+  @function sstumm-color($key: 'secondary') {
+    @return map-get($scotch-colors, $key);
+  }
+
+  @function sstumm-color($key: 'foreground') {
+    @return map-get($scotch-colors, $key);
+  }
+
+  @function sstumm-color($key: 'background') {
+    @return map-get($sstumm-colors, $key);
+  }
+  
+  $card-color: sstumm-color('primary');

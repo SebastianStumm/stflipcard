@@ -1,0 +1,27 @@
+@import '../colors.scss';
+
+.language-logo-container-front {
+    height: 100%;
+    width: 100%;
+    display: table;
+    background-color: sstumm-color('primary');
+    color: sstumm-color('secondary');
+}
+
+.language-logo-front {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.language-logo-container-back {
+    height: 100%;
+    width: 100%;
+    display: table;
+    background-color: sstumm-color('background');
+}
+
+.language-logo-back {
+    display: table-cell;
+    vertical-align: middle;
+}
+

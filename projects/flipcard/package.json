@@ -1,0 +1,15 @@
+{
+  "name": "stflipcard",
+  "version": "0.0.1",
+  "author": "Sebastian Stumm",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^8.0.3",
+    "@angular/core": "^8.0.3"
+  },
+  "scripts": {
+    "build_lib": "ng build flipcard",
+    "npm_pack": "cd ../../dist/stflipcard && npm pack",
+    "package": "npm run build_lib && npm run npm_pack"
+  }
+}

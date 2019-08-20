@@ -119,6 +119,41 @@
           }
         }
       }
+    },
+    "flipcard": {
+      "projectType": "library",
+      "root": "projects/flipcard",
+      "sourceRoot": "projects/flipcard/src",
+      "prefix": "st",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/flipcard/tsconfig.lib.json",
+            "project": "projects/flipcard/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/flipcard/src/test.ts",
+            "tsConfig": "projects/flipcard/tsconfig.spec.json",
+            "karmaConfig": "projects/flipcard/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/flipcard/tsconfig.lib.json",
+              "projects/flipcard/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "rflipcard"
 }

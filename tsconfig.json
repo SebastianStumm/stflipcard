@@ -18,6 +18,16 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "flipcard": [
+        // "projects/flipcard/src"
+        "dist/stflipcard"
+      ],
+      "flipcard/*": [
+        // "projects/flipcard/src/*"
+        "dist/stflipcard/*"
+      ]
+    }
   }
 }
